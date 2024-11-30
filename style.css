@@ -23,12 +23,18 @@ body {
 
 .main {
     background: linear-gradient(135deg, #1c3a57, #3e6f94);
-    padding: 40px;
+    padding: 30px 40px;
     border-radius: 15px;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+}
+
+.main h2{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .display {
@@ -116,10 +122,10 @@ button:hover {
 }
 
 /* Responsive design */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .main {
         width: 90%;
-        padding: 20px;
+        padding: 30px 20px;
     }
 
     .display{
