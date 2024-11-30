@@ -20,6 +20,19 @@ const randomNumber = (passSet) => {
 const generateNumber = () => {
     let password = '';
 
+    const passwordLength = parseInt(totalNumber.value);
+    if (passwordLength > MAX_LENGTH) {
+        displayBox.textContent = `Max password length is ${MAX_LENGTH}`;
+        totalNumber.value = MAX_LENGTH;  // Set the input value to 20
+        return;
+    }
+
+    if(!totalNumber.value || passwordLength < 1){
+        displayBox.textContent = `Enter valid password length`;
+        totalNumber.value = MAX_LENGTH;  // Set the input value to 20
+        return;
+    }
+
     const selectedSets = [];
     if (uppercase.checked) selectedSets.push(upperSet);
     if (lowercase.checked) selectedSets.push(lowerSet);
@@ -28,13 +41,6 @@ const generateNumber = () => {
 
     if (selectedSets.length === 0) {
         displayBox.textContent = 'Select at least one option.';
-        return;
-    }
-
-    const passwordLength = parseInt(totalNumber.value);
-    if (passwordLength > MAX_LENGTH) {
-        displayBox.textContent = `Max length is ${MAX_LENGTH}`;
-        totalNumber.value = MAX_LENGTH;  // Set the input value to 20
         return;
     }
 
