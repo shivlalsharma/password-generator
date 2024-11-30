@@ -9,7 +9,7 @@ const uppercase = document.querySelector('#uppercase');
 const lowercase = document.querySelector('#lowercase');
 const number = document.querySelector('#number');
 const special = document.querySelector('#symbol');
-const button = document.querySelector('button');
+const generateBtn = document.querySelector('#generateBtn');
 const MAX_LENGTH = 20;
 
 const randomNumber = (passSet) => {
@@ -74,7 +74,7 @@ const copyPassword = () => {
 
 displayBox.addEventListener('click', copyPassword);
 
-button.addEventListener('click', () => {
+generateBtn.addEventListener('click', () => {
     generateNumber();
 });
 
