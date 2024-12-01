@@ -48,7 +48,7 @@ follow these steps to run the Password Generator locally:
 
 2. **Open the `index.html` file in your browser**.
 
-   Alternatively, you can set up a local server (e.g., using **VS Code Live Server**) to view the game in your browser.
+   Alternatively, you can set up a local server (e.g., using **VS Code Live Server**) to view the project in your browser.
 
 ## License
 
